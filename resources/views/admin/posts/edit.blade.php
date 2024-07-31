@@ -1,13 +1,13 @@
 @extends('admin.posts.layouts.create-or-edit')
 
 @section('page-title')
-Create new post
+Editing{{$post->title}}
 @endsection
 
 @section('form-action')
-{{route('admin.posts.store')}}
+{{route('admin.posts.update', $post)}}
 @endsection
 
 @section('form-method')
-@method('POST')
+@method('PUT')
 @endsection

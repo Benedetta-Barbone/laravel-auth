@@ -24,6 +24,9 @@
                             <td>
                                 <a href="{{ route('admin.posts.show', $post)}}" class="btn btn-primary btn-sm">Show</a>
                             </td>
+                            <td>
+                                <a href="{{ route('admin.posts.edit', $post)}}" class="btn btn-primary btn-sm">Edit</a>
+                            </td>
                         </tr>
                     @endforeach
                 </tbody>

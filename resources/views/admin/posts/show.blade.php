@@ -7,6 +7,7 @@
             <h2>{{ $post->id }}</h2>
             <h2>{{ $post->title }}</h2>
             <h3>{{ $post->author }}</h3>
+            <img src="{{$post->image}}" alt="">
             <h4>{{ $post->date }}</h4>
             <p>
                 {{ $post->content }}
