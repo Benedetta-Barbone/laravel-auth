@@ -23,6 +23,9 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [GuestHomeController::class, 'index'])->name('home');
+Route::post('admin/posts/create', [AdminPostController::class, 'store']);
+
+
 
 Route::middleware('auth')->name('admin.')->prefix('admin/')->group(
     function(){
